@@ -4,7 +4,7 @@
     <meta charset="UTF-8">     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">     
     <title>W3Schools</title>    
-     
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -125,60 +125,294 @@
      
 <!-- Language Hero Sections -->
 <section class="language-heroes">
+    <!-- HTML Section -->
     <div class="lang-hero html-hero">
         <div class="lang-content">
-            <h2>HTML</h2>
-            <p>The language for building web pages</p>
-            <div class="lang-examples">
-                <div class="example-code">
-                    <code>&lt;button&gt;Click Me&lt;/button&gt;</code>
+            <div class="lang-text">
+                <h1>HTML</h1>
+                <p>The language for building web pages</p>
+                <div class="lang-buttons">
+                    <button class="learn-btn">Learn HTML</button>
+                    <button class="ref-btn">HTML Reference</button>
+                    <button class="cert-btn">Get Certified</button>
                 </div>
-                <button class="try-btn">Try it Yourself</button>
+            </div>
+            <div class="lang-examples">
+                <div class="example-box">
+                    <div class="example-header">HTML Example:</div>
+                    <div class="example-code">
+                        <code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;title&gt;HTML Tutorial&lt;/title&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a heading&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</code>
+                    </div>
+                    <button class="try-btn">Try it Yourself »</button>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="lang-hero css-hero">
         <div class="lang-content">
-            <h2>CSS</h2>
-            <p>The language for styling web pages</p>
-            <div class="lang-examples">
-                <div class="example-code">
-                    <code>button { color: black; }</code>
+            <div class="lang-text">
+                <h1>CSS</h1>
+                <p>The language for styling web pages</p>
+                <div class="lang-buttons">
+                    <button class="learn-btn">Learn CSS</button>
+                    <button class="ref-btn">CSS Reference</button>
+                    <button class="cert-btn">Get Certified</button>
                 </div>
-                <button class="try-btn">Try it Yourself</button>
+            </div>
+            <div class="lang-examples">
+                <div class="example-box">
+                    <div class="example-header">HTML Example:</div>
+                    <div class="example-code">
+                        <code>body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;}</code>
+                    </div>
+                    <button class="try-btn">Try it Yourself »</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="lang-hero js-hero">
+     <div class="lang-hero js-hero">
         <div class="lang-content">
-            <h2>JavaScript</h2>
-            <p>The language for programming web pages</p>
-            <div class="lang-examples">
-                <div class="example-code">
-                    <code>console.log("Hello, World!");</code>
+            <div class="lang-text">
+                <h1>JavaScript</h1>
+                <p>The language for programming web pages</p>
+                <div class="lang-buttons">
+                    <button class="learn-btn">Learn JavaScript</button>
+                    <button class="ref-btn">JavaScript Reference</button>
+                    <button class="cert-btn">Get Certified</button>
                 </div>
-                <button class="try-btn">Try it Yourself</button>
+            </div>
+            <div class="lang-examples">
+                <div class="example-box">
+                    <div class="example-header">JavaScript Example:</div>
+                    <div class="example-code">
+                        <code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;h2&gt;JavaScript in Body&lt;/h2&gt;<br><br>&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById('demo')
+                .innerHTML = Date()&quot;&gt;The time is?&lt;/button&gt;<br><br>&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+                            <br><br>&lt;/body&gt;<br>&lt;/html&gt;</code>
+                    </div>
+                    <button class="try-btn">Try it Yourself »</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="lang-hero python-hero">
+    <div class="lang-hero Python-hero">
         <div class="lang-content">
-            <h2>Python</h2>
-            <p>A popular programming language</p>
-            <div class="lang-examples">
-                <div class="example-code">
-                    <code>print("Hello, World!")</code>
+            <div class="lang-text">
+                <h1>Python</h1>
+                <p>A popular programming language</p>
+                <div class="lang-buttons">
+                    <button class="learn-btn">Learn Python</button>
+                    <button class="ref-btn">Python Reference</button>
+                    <button class="cert-btn">Get Certified</button>
                 </div>
-                <button class="try-btn">Try it Yourself</button>
             </div>
+            <div class="lang-examples">
+                <div class="example-box">
+                    <div class="example-header">Python Example:</div>
+                    <div class="example-code">
+                        <code>if 5 > 2:
+    print("Five is greater than two!")
+
+# This is a comment
+name = "Python"
+print("Hello, " + name)</code>
+                    </div>
+                    <button class="try-btn">Try it Yourself »</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="more-languages">
+    <div class="more-lang-grid">
+        
+        <div class="more-lang-box" style="background-color: #ffc0c7;">
+            <h2>PHP</h2>
+            <p>A web server programming language</p>
+            <button class="more-learn-btn">Learn PHP</button>
+        </div>
+
+        
+        <div class="more-lang-box" style="background-color: #FFF4A3;">
+            <h2>jQuery</h2>
+            <p>A JS library for developing web pages</p>
+            <button class="more-learn-btn">Learn jQuery</button>
+        </div>
+
+        
+        <div class="more-lang-box" style="background-color: #F3ECEA;">
+            <h2>Java</h2>
+            <p>A programming language</p>
+            <button class="more-learn-btn">Learn Java</button>
+        </div>
+
+        
+        <div class="more-lang-box" style="background-color: #D9EEE1;">
+            <h2>C++</h2>
+            <p>A programming language</p>
+            <button class="more-learn-btn">Learn C++</button>
+        </div>
+
+        
+        <div class="more-lang-box" style="background-color: #96D4D4;">
+            <h2>W3.CSS</h2>
+            <p>A CSS framework for faster and better responsive web pages</p>
+            <button class="more-learn-btn">Learn W3.CSS</button>
+        </div>
+
+        
+        <div class="more-lang-box" style="background-color: #E7E9EB;">
+            <h2>Bootstrap</h2>
+            <p>A CSS framework for designing better web pages</p>
+            <button class="more-learn-btn">Learn Bootstrap</button>
         </div>
     </div>
 </section>
-   
 
+<section class="two-column-section">
+    <div class="two-column-content">    
+            <div class="two-column">
+                 <h2>C</h2>
+            </div>
+            <div class="two-column" style="background-color: #FFF4A3!important;">
+                <h2>C#</h2>
+            </div>
+    </div>
+
+    <div class="four-column-content">   
+                <div class="four-column">
+                    <h2>R</h2>
+                </div>
+                <div class="four-column">
+                    <h2>Kotlin</h2>
+                </div>
+                <div class="four-column">
+                    <h2>NODEJS</h2>
+                </div>
+                <div class="four-column">
+                    <h2>REACT</h2>
+                </div>
+                <div class="four-column">
+                    <h2>R</h2>
+                </div>
+                <div class="four-column">
+                    <h2>Kotlin</h2>
+                </div>
+                <div class="four-column">
+                    <h2>NODEJS</h2>
+                </div>
+                <div class="four-column">
+                    <h2>REACT</h2>
+                </div><div class="four-column">
+                    <h2>R</h2>
+                </div>
+                <div class="four-column">
+                    <h2>Kotlin</h2>
+                </div>
+                <div class="four-column">
+                    <h2>NODEJS</h2>
+                </div>
+                <div class="four-column">
+                    <h2>REACT</h2>
+                </div><div class="four-column">
+                    <h2>R</h2>
+                </div>
+                <div class="four-column">
+                    <h2>Kotlin</h2>
+                </div>
+                <div class="four-column">
+                    <h2>NODEJS</h2>
+                </div>
+                <div class="four-column">
+                    <h2>REACT</h2>
+                </div><div class="four-column">
+                    <h2>R</h2>
+                </div>
+                <div class="four-column">
+                    <h2>Kotlin</h2>
+                </div>
+                <div class="four-column">
+                    <h2>NODEJS</h2>
+                </div>
+                <div class="four-column">
+                    <h2>REACT</h2>
+                </div><div class="four-column">
+                    <h2>R</h2>
+                </div>
+                <div class="four-column">
+                    <h2>Kotlin</h2>
+                </div>
+                <div class="four-column">
+                    <h2>NODEJS</h2>
+                </div>
+                <div class="four-column">
+                    <h2>REACT</h2>
+                </div><div class="four-column">
+                    <h2>R</h2>
+                </div>
+                <div class="four-column">
+                    <h2>Kotlin</h2>
+                </div>
+                <div class="four-column">
+                    <h2>NODEJS</h2>
+                </div>
+                <div class="four-column">
+                    <h2>REACT</h2>
+                </div>
+    </div>
+
+     <div class="two-column-content">           
+            <div class="two-column" style="background-color: #96D4D4!important;">
+                <h2>Excel</h2>
+            </div>
+            <div class="two-column" style="background-color: #FFF4A3!important;">
+                <h2>DSA - Data structure and algorithms</h2>
+            </div>
+            <div class="two-column" style="background-color: #FFC0C7!important">
+                <h2>Machine Learning</h2>
+            </div>
+            <div class="two-column" style="background-color: #F3ECEA!important;">
+                <h2>Artificial Intelligence</h2>
+            </div>
+            <div class="two-column" style="background-color: #D9EEE1!important;">
+                <h2>Introduction to Programming</h2>
+            </div>
+            <div class="two-column" style="background-color: #96D4D4!important;">
+                <h2>Bash</h2>
+            </div>
+    </div>
+
+         <div class="four-column-content">   
+                <div class="four-column">
+                    <h2>R</h2>
+                </div>
+                <div class="four-column">
+                    <h2>Kotlin</h2>
+                </div>
+                <div class="four-column">
+                    <h2>NODEJS</h2>
+                </div>
+                <div class="four-column">
+                    <h2>REACT</h2>
+                </div>
+            </div>
+
+</section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="/practise/js.js"></script>
 </body>

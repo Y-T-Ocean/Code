@@ -344,97 +344,336 @@ body{
 }
 
 
-/* Lesson learn point */
-
-
 
 /* Language Heroes Section */
 .language-heroes {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    background-color: #F3ECEA;
 }
-
+.lang-text{
+    text-align: center;
+}
 .lang-hero {
-    padding: 32px;
-    border-radius: 8px;
+    padding: 80px 70px;
     color: white;
 }
 
 .lang-content {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 50px;
     align-items: center;
 }
 
-.lang-content h2 {
-    font-size: 48px;
-    margin-bottom: 16px;
+.lang-text h1 {
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: black;
 }
 
-.lang-content p {
-    font-size: 21px;
-    margin-bottom: 32px;
+.lang-text p {
+    font-size: 19px;
+    margin-bottom: 30px;
+    text-align: bold;
+    color: black;
+    
 }
 
-.lang-examples {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 24px;
-    border-radius: 8px;
-    font-family: monospace;
+.lang-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+/* Button Styles */
+.learn-btn, .ref-btn, .cert-btn {
+    width: 300px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* HTML Section Specific */
+.html-hero {
+    background-color: #D9EEE1;
+}
+
+.html-hero .learn-btn {
+    background-color: white;
+    color: black;
+}
+
+.html-hero .ref-btn {
+    background-color: #282A35;
+    color: white;
+}
+
+.html-hero .cert-btn {
+    background-color: #FFF4A3;
+    color: black;
+}
+
+/* CSS Section Specific */
+.css-hero {
+    background-color: #FFF4A3;
+}
+
+.css-hero .learn-btn {
+    background-color: white;
+    color: black;
+}
+
+.css-hero .ref-btn {
+    background-color: #282A35;
+    color: white;
+}
+
+.css-hero .cert-btn {
+    background-color: #FFC0c7;
+    color: black;
+    
+}
+
+/* js Section Specific */
+.js-hero {
+    background-color: #282A35;
+}
+
+.js-hero .learn-btn {
+    background-color: #04AA6D;
+    color: black;
+}
+
+.js-hero .ref-btn {
+    background-color: white;
+    color: black;
+}
+
+.js-hero .cert-btn {
+    background-color: #FFC0c7;
+    color: black;
+    
+}
+.js-hero h1{
+    color: white
+}
+.js-hero p{
+    color: white
+}
+
+.js-hero .lang-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    
+    
+}
+
+/* Python Section Specific */
+.Python-hero {
+    background-color: #F3ECEA;
+}
+
+.Python-hero .learn-btn {
+    background-color: #04AA6D;
+    color: black;
+}
+
+.Python-hero .ref-btn {
+    background-color: white;
+    color: black;
+}
+
+.Python-hero .cert-btn {
+    background-color: #FFC0c7;
+    color: black;
+    
+}
+.Python-hero h1{
+    color: black
+}
+.Python-hero p{
+    color: black;
+}
+
+.Python-hero .lang-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+
+
+
+/* Example Box Styles */
+.example-box {
+    background-color: #E7E9EB;
+    border-radius: 5px;
+    color: black;
+    padding: 16px;
+    
+}
+
+.example-header {
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 .example-code {
+    background-color: white;
+    padding: 16px;
+    border-left: 4px solid #04AA6D;
     margin-bottom: 20px;
 }
 
 .example-code code {
-    font-size: 18px;
+    font-family: Consolas, monospace;
+    font-size: 15px;
+    line-height: 1.5;
+    white-space: pre;
+    margin-bottom: 16px;
 }
 
 .try-btn {
-    background-color: white;
-    color: black;
+    background-color: #04AA6D;
+    color: white;
+    
     border: none;
-    padding: 12px 24px;
-    border-radius: 25px;
+    padding: 8px 12px;
+    font-size: 17px;
     cursor: pointer;
-    font-size: 16px;
-    transition: transform 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.2s;
 }
 
 .try-btn:hover {
-    transform: translateX(10px);
+    background-color: #059862;
+    
 }
 
-/* Hero Background Colors */
-.html-hero { background-color: #04AA6D; }
-.css-hero { background-color: #FFF4A3; color: black; }
-.js-hero { background-color: #282A35; }
-.python-hero { background-color: #23242a; }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .lang-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
+/* two culum  */
+.more-languages {
+    background-color: #282A35;
+    padding: 32px;
+}
 
-    .lang-content h2 {
-        font-size: 36px;
-    }
+.more-lang-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
 
-    .lang-content p {
-        font-size: 18px;
-    }
+}
 
-    .example-code code {
-        font-size: 16px;
-    }
+.more-lang-box {
+    background-color: white;
+    border-radius: 4px;
+    padding: 32px 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin: 10px;
+}
+
+.more-lang-box:hover {
+    transform: translateY(-10px);
+}
+
+.more-lang-box h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: #000;
+    font-weight: 700;
+
+}
+
+.more-lang-box p {
+    color: #000;
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.more-learn-btn {
+    background-color: #282A35;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.more-learn-btn:hover {
+    background-color: #343641;
+}
+
+.two-column-section {
+    background-color: #282A35;
+    padding: 32px;
+}
+
+.two-column-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.two-column {
+    background-color: #FFC0C7!important;
+    border-radius: 4px;
+    padding: 32px 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin: 10px;
+}
+.two-column h2{
+    font-size: 24px;
+    margin: 10px 0;
+    color: #000;
+}
+
+
+.four-column-section {
+    background-color: #282A35;
+    padding: 32px;
+    width: 100%;
+}
+
+.four-column-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 20px;
+
+}
+.four-column {
+    background-color: #FFC0C7!important;
+    border-radius: 4px;
+    padding: 24px 16px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin: 0;
 }
